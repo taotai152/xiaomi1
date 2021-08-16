@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-3.5.1/jquery-3.5.1.js"></script>
+		<style type="text/css">
+			
+			.q{
+				width:400px;
+				height:400px;
+				background-color:rosybrown;
+				margin: 0 auto;
+			}
+			
+			.q .w{
+				display: inline-block;
+				width:50px;
+				height:20px;
+				background-color: gray;
+			}
+			
+			.q .e{
+				display: inline-block;
+				width:50px;
+				height:20px;
+				background-color: gray;
+				margin-left: 10px;
+			}
+			
+			.q .r{
+				width:300px;
+				height:300px;
+				border: 1px solid red;
+				margin-top: 10px;
+				margin-left: 10px;
+				position: relative;
+			}
+			
+			.q .r .r1{
+				width:300px;
+				height:300px;
+				background-color: orchid;
+				position: absolute;
+			}
+			
+			.q .r .r2{
+				width:300px;
+				height:300px;
+				background-color: cornflowerblue;
+				position: absolute;
+				/* margin-left: 400px; */
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="q">
+			<a class="w">1</a>
+			<a class="e">2</a>
+			
+			<div class="r">
+				<div class="r1"></div>
+				<div class="r2"></div>
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript">
+			
+			$(".w").mouseenter(function(){
+				
+					$(".r1").animate({marginLeft:"400px"},2000)
+				// $(".r1").animate({marginLeft:"0px"},2000)
+				// $(".r1").animate({marginLeft:"400px"},2000)
+				
+			})
+			
+			$(".e").mouseenter(function(){
+				
+				$(".r2").animate({marginLeft:"400px"},2000)
+				
+			})
+			
+		</script>
+		
+	</body>
+</html>

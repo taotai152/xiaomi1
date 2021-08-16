@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-3.5.1/jquery-3.5.1.js"></script>
+		<style type="text/css">
+			
+			.q{
+			width:239px;
+			height:656px;
+			background-color: rosybrown;
+			}
+			
+		  .q ul{
+				list-style-type: none;
+			}
+			
+		  .q ul li{
+				list-style-type: none;
+				width:239px;
+				height:41px;
+				line-height: 41px;
+				background-color: royalblue;
+				margin-left: -40px;
+				margin-bottom: 5px;
+			}
+			
+			
+			
+			.q ul li .ww{
+				text-decoration: none;
+				color: #000000;
+			}
+			
+			.q ul li .ww:hover{
+				color: #FF4200;
+				text-decoration: blink;
+			}
+			
+			.q ul li .ww i{
+				position: absolute;
+				right: 1680px;
+				color: gray;
+			}
+			
+			.q ul li:hover{
+				background-color: rosybrown;
+				list-style-type: none;
+			}
+			
+		
+			
+			.q ul li .w{
+				width:896px;
+				height:683px;
+				/* position: absolute; */
+				display:none;
+				position: relative;
+			}
+			
+			.q ul li .e{
+				width:896px;
+				height:683px;
+				border: 1px solid red;
+				margin-left:239px;
+				margin-top:-40px;
+				position:absolute;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="q">
+		<ul>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="e"></div>
+			<div class="w" style="background-color: gray; margin-top:-39px; margin-left:240px;">1</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: #138496;margin-top:-85px;margin-left:239px;">2</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: orchid; margin-top:-131px; margin-left:240px;">3</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-177px; margin-left:239px;">4</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-223px; margin-left:240px;">5</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-269px; margin-left:239px;">6</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-315px; margin-left:239px;">7</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-361px; margin-left:239px;">8</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-407px; margin-left:239px;">9</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-453px; margin-left:239px;">10</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-499px; margin-left:239px;">11</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-545px; margin-left:239px;">12</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-591px; margin-left:239px;">13</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-638px; margin-left:239px;">14</div>
+			</li>
+			<li>
+			<a href="#" class="ww"> 女装 / 内衣 / 家居 <i>></i> </a>
+			<div class="w" style="background-color: coral; margin-top:-684px; margin-left:239px;">15</div>
+			</li>
+		</ul>
+		</div>
+		<script type="text/javascript">
+			
+		$("li").mouseenter(function(){
+			// 获取li下标
+			let z=$(this).index()
+			$(".w").eq(z).show()
+			$(".w").eq(z).siblings().hide()
+			
+		})
+		
+		// $("li").mouseleave(function(){
+		// 	$(".w").hide()
+			
+		// })
+			
+		</script>
+		
+	</body>
+</html>
